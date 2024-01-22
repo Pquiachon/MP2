@@ -23,6 +23,7 @@
 #btn_coach {
   background-color: #ffa732;
 }
+
 @media (100px <= width <= 400px) {
   .text-overlay {
     transform: scale(0);
@@ -112,10 +113,12 @@
 #btn_about {
   background-color: #ffa732;
   padding: 5px;
+  color: white;
 }
 #btn_train {
   background-color: #c21292;
   padding: 5px;
+  color: white;
 }
 #coach_div {
   margin-top: 30px;

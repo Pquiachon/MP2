@@ -22,12 +22,280 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
-    <script src="js/exercises.js"></script>
-    <link rel="stylesheet" href="css/exercises.css" />
+    <link rel="stylesheet" href="../css/exercises.css" />
+    <!-- <link rel="stylesheet" href="../css/about_us.css" /> -->
+
+    <script src="../js/exercisespage.js"></script>
+    <script src="../js/logout.js"></script>
   </head>
   <body>
-    <h1>Cat Facts</h1>
-    <p id="cat_fact"></p>
-    <button class="btn btn-primary" id="generate_fact">Generate Fact</button>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="../img/favicon.png" alt="fit-flex logo" id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-text" aria-current="page" href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="exercises.html">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="instructors.html">Coaches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+        <span class="nav-text me-3 fs-4" id="welcome">Welcome, User!</span>
+        <button class="btn btn-outline-dark" type="button" id="btn-logout">
+          Logout
+        </button>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- hero -->
+    <div id="exer_hero" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img
+            src="../img/exercise_hero.jpg"
+            class="d-block w-100 c-img img-fluid"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-caption top-0 mt-5">
+          <h5 id="c-caption">GET GOING</h5>
+        </div>
+      </div>
+    </div>
+    <!-- hero -->
+
+    <!-- preperation -->
+    <div class="container-fluid">
+      <h1>PREPARATION</h1>
+      <div class="container">
+        <p class="info_text">
+          Before starting any exercise routine, it's important to prepare your
+          body to reduce the risk of injury and enhance the effectiveness of
+          your workout. Here are some basic things to do before exercising.
+        </p>
+        <ul>
+          <li>
+            <strong>Warm-Up:</strong><br />Perform a brief warm-up to gradually
+            increase your heart rate and warm up your muscles. This can include
+            light cardio activities such as jogging in place, jumping jacks, or
+            dynamic stretches.
+          </li>
+          <li>
+            <strong>Stretching:</strong><br />Engage in dynamic stretching to
+            improve flexibility and increase blood flow to the muscles. Focus on
+            the major muscle groups that you'll be using during your workout.
+          </li>
+          <li>
+            <strong>Hydrate:</strong><br />Drink water to ensure you are
+            well-hydrated before starting your workout. Dehydration can
+            negatively impact performance and recovery.
+          </li>
+          <li>
+            <strong>Proper Attire:</strong><br />Wear comfortable, breathable
+            clothing and appropriate footwear for your chosen activity. This
+            helps prevent discomfort and allows for a full range of motion.
+          </li>
+          <li>
+            <strong>Check Equipment:</strong><br />If you're using exercise
+            equipment, make sure it's in good condition. Check for any loose
+            parts, damaged surfaces, or malfunctioning features.
+          </li>
+          <li>
+            <strong>Set Realistic Goals:</strong><br />Have clear and achievable
+            fitness goals for your workout session. Setting realistic goals can
+            help you stay focused and motivated.
+          </li>
+          <li>
+            <strong>Mindful Breathing:</strong><br />Practice mindful breathing
+            to increase oxygen flow to your muscles. Deep breathing helps reduce
+            stress and prepares your body for physical activity.
+          </li>
+          <li>
+            <strong>Listen to Your Body:</strong><br />Pay attention to how your
+            body feels. If you experience pain or discomfort, it's essential to
+            address it before intensifying your workout.
+          </li>
+          <li>
+            <strong>Review Your Exercise Plan:</strong><br />Have a clear plan
+            for your workout, including the type of exercises, sets, and
+            repetitions. This helps you stay organized and ensures a balanced
+            workout.
+          </li>
+          <li>
+            <strong>Consult a Professional:</strong><br />If you have any health
+            concerns or are starting a new exercise program, consider consulting
+            with a healthcare professional or fitness expert for personalized
+            advice.
+          </li>
+        </ul>
+        <p>
+          Remember that the specific activities you do before exercising may
+          vary depending on the type of workout you're planning. Whether it's
+          cardio, strength training, or flexibility exercises, the goal is to
+          prepare your body gradually and safely for the upcoming physical
+          activity.
+        </p>
+      </div>
+    </div>
+    <!-- preperation -->
+    <!-- buttons small-->
+    <div class="container-fluid">
+      <h1>Exercises</h1>
+      <p class="info_text">
+        Can't go to the gym at the moment? Try our free programs that you can do
+        at home.
+      </p>
+      <p id="choose">Choose Difficulty</p>
+      <div id="dif">
+        <button class="button-dif" id="beginner">Beginner</button>
+        <button class="button-dif" id="intermediate">Intermediate</button>
+        <button class="button-dif" id="expert">Expert</button>
+      </div>
+      <!-- buttons small-->
+      <!-- box big-->
+      <div class="row">
+        <p id="choose">Choose Parts</p>
+
+        <div class="box col-md-4 gy-3">
+          <div class="wrap" id="abdominals">
+            <img src="../img/abs.png" alt=".." class="parts_img" />
+            <div class="cap">ABDOMINALS</div>
+          </div>
+        </div>
+        <div class="box col-md-4 gy-3">
+          <div class="wrap" id="shoulder">
+            <img src="../img/shoulder.png" alt=".." class="parts_img" />
+            <div class="cap">SHOULDERS</div>
+          </div>
+        </div>
+        <div class="box col-md-4 gy-3">
+          <div class="wrap" id="legs">
+            <img src="../img/legs.png" alt=".." class="parts_img" />
+            <div class="cap">LEGS</div>
+          </div>
+        </div>
+
+        <div class="box col-md-6 gy-3">
+          <div class="wrap" id="chest">
+            <img src="../img/chest.png" alt=".." class="parts_img" />
+            <div class="cap">CHEST</div>
+          </div>
+        </div>
+        <div class="box col-md-6 gy-3">
+          <div class="wrap" id="back">
+            <img src="../img/back.png" alt=".." class="parts_img" />
+            <div class="cap">BACK</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- box big-->
+    <!-- cards -->
+    <div class="row" id="parts"></div>
+    <!-- cards -->
   </body>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="container container-fluid">
+            <img src="../img/favicon.png" id="favicon-footer" />
+            <ul id="footer-lists">
+              <li id="caption-footer">
+                DON'T BE AFRAID BEING A BEGINNER, START YOUR JOURNEY WITH US.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 mt-0">
+          <div class="container">
+            <h2>FOLLOW US</h2>
+            <ul>
+              <li id="links">
+                <a href="facebook.com">Facebook</a>
+              </li>
+              <li id="links">
+                <a href="instagram.com">Instagram</a>
+              </li>
+              <li id="links">
+                <a href="linkedin.com">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="container">
+            <h2>COMPANY</h2>
+            <ul>
+              <li id="links">
+                <a href="home.html">Home</a>
+              </li>
+
+              <li id="links">
+                <a href="instructors.html">Coaches</a>
+              </li>
+              <li id="links">
+                <a class="text-decoration-line-through">Career</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="container">
+            <h2>DOCUMENTATION</h2>
+            <ul>
+              <li id="links">
+                <a href="#contacth2">Contact</a>
+              </li>
+              <li id="links">
+                <a href="#faq">FAQ</a>
+              </li>
+              <li id="links">
+                <a href="#privacy">Privacy Policy</a>
+              </li>
+              <li id="links">
+                <a href="#about">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row"><hr /></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <p id="copyright">
+          © Paul & Rendell's Partnership. All Rights Reserved 2023
+        </p>
+      </div>
+    </div>
+  </footer>
 </html>

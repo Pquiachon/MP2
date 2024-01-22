@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script href="js/instructors.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -9,6 +8,12 @@
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon1.png
+      "
+      type="image/png"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
@@ -19,13 +24,60 @@
     <title>Instructors</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="css/instructors.css" />
+    <link rel="stylesheet" href="../css/instructors.css" />
+    <link rel="stylesheet" href="../CSS/about_us.css" />
+    <script href="../js/instructors.js"></script>
+    <script href="../js/logout.js"></script>
   </head>
   <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="../img/favicon.png" alt="fit-flex logo" id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-text" aria-current="page" href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="exercises.html">Exercises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="instructors.html">Coaches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+        <span class="nav-text me-3 fs-4" id="welcome">Welcome, User!</span>
+        <button class="btn btn-outline-dark" type="button" id="btn-logout">
+          Logout
+        </button>
+      </div>
+    </nav>
+
+    <!-- Content -->
+
     <div class="container-fluid" id="hero_div">
       <img
-        src="img/hero_instuctors.jpg"
-        class="img-fluid"
+        src="../img/hero_instuctors.jpg"
+        class="img-fluid hero"
         alt="Three persons running on a threadmill"
         id="img_hero"
       />
@@ -49,7 +101,7 @@
       <div class="row" id="instructor_div">
         <div class="col-lg-6">
           <img
-            src="img/instructor1.webp"
+            src="../img/instructor1.webp"
             class="img-fluid"
             alt="Fit Flex
           Instructors working out."
@@ -63,15 +115,15 @@
               INSTRUCTORS
             </b>
           </h1>
-          <h3 id="para2">
+          <h4 id="para2">
             Guiding you towards strength, wellness, and success. American
             Council on Exercise (ACE), National Academy of Sports Medicine
             (NASM), Fitness Edutraining Asia (FEA).
-          </h3>
+          </h4>
         </div>
       </div>
       <div>
-        <h2 id="coach_div">Our Coaches</h2>
+        <h1 id="coach_div">Our Coaches</h1>
       </div>
     </div>
     <div class="container-fluid" id="coaches_cont">
@@ -79,7 +131,7 @@
         <div class="col-md-4">
           <div class="card">
             <img
-              src="img/coach1.jpg"
+              src="../img/coach1.jpg"
               class="card-img-top"
               alt="Male gym coach"
             />
@@ -117,7 +169,7 @@
         <div class="col-md-4">
           <div class="card">
             <img
-              src="img/coach2.jpg"
+              src="../img/coach2.jpg"
               class="card-img-top"
               alt="Male gym coach"
             />
@@ -154,7 +206,7 @@
         <div class="col-md-4">
           <div class="card">
             <img
-              src="img/coach3.jpg"
+              src="../img/coach3.jpg"
               class="card-img-top"
               alt="Female gym coach1"
             />
@@ -193,7 +245,7 @@
         <div class="col-md-4">
           <div class="card">
             <img
-              src="img/coach4.jpg"
+              src="../img/coach4.jpg"
               class="card-img-top"
               alt="Male gym coach"
             />
@@ -231,7 +283,7 @@
         <div class="col-md-4">
           <div class="card">
             <img
-              src="img/coach5.jpg"
+              src="../img/coach5.jpg"
               class="card-img-top"
               alt="Male gym coach"
             />
@@ -268,7 +320,7 @@
         <div class="col-md-4">
           <div class="card">
             <img
-              src="img/coach6.jpg"
+              src="../img/coach6.jpg"
               class="card-img-top"
               alt="Female gym coach"
             />
@@ -371,4 +423,84 @@
       </div>
     </div>
   </body>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="container container-fluid">
+            <img src="../img/favicon.png" id="favicon-footer" />
+            <ul id="footer-lists">
+              <li>
+                DON'T BE AFRAID BEING A BEGINNER, START YOUR JOURNEY WITH US.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 mt-0">
+          <div class="container">
+            <h2>FOLLOW US</h2>
+            <ul>
+              <li>
+                <a href="facebook.com">Facebook</a>
+              </li>
+              <li>
+                <a href="instagram.com">Instagram</a>
+              </li>
+              <li>
+                <a href="linkedin.com">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="container">
+            <h2>COMPANY</h2>
+            <ul>
+              <li>
+                <a href="home.html">Home</a>
+              </li>
+
+              <li>
+                <a href="instructors.html">Coaches</a>
+              </li>
+              <li>
+                <a class="text-decoration-line-through">Career</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="container">
+            <h2>DOCUMENTATION</h2>
+            <ul>
+              <li>
+                <a href="about.html">Contact</a>
+              </li>
+              <li>
+                <a href="about.html">FAQ</a>
+              </li>
+              <li>
+                <a href="about.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row"><hr /></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <p id="copyright">
+          © Paul & Rendell's Partnership. All Rights Reserved 2023
+        </p>
+      </div>
+    </div>
+  </footer>
 </html>
