@@ -30,7 +30,7 @@
 #box {
   position: relative;
   width: 80%;
-  height: 60dvh;
+  height: 80dvh;
   display: flex;
   justify-content: center;
   align-items: center;
